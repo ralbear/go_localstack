@@ -10,7 +10,7 @@ stop:
 
 build:
 	CGO_ENABLED=0 go build -ldflags "-s -w" -o ./bin/main ./app/main.go
-	zip ./bin/terraformFunction.zip ./bin/main
+	zip -r -j ./bin/terraformFunction.zip ./bin/main
 	rm ./bin/main
 
 terraform-plan:
