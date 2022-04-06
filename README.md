@@ -25,3 +25,10 @@ A localstack setup using go
       ```
       alias awslocal='aws --profile localstack --endpoint-url http://localhost:4566'
       ```
+
+### Examples
+
+ - Running basic lambda function  
+ ```
+ awslocal lambda invoke --function-name terraformFunction --cli-binary-format raw-in-base64-out --payload '{"username":"hello","password":"world"}' response.json
+ ```
