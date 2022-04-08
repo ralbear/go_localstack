@@ -3,3 +3,4 @@
 *.tfstate*
 bin/*
 vendor
+.DS_store
